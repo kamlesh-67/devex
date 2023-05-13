@@ -163,3 +163,20 @@ header nav a{
     position: absolute;
     opacity: 0.3;
 }
+.svghover{
+    fill: rgb(55, 71, 79);
+    /* fill: #ebff0b; */
+}
+.svghover:hover{
+    /* fill: #0bff40; */
+    fill: var(--fourth);
+}
+#els4y94mu3c8f:hover,#elp09mfr6t2v:hover {
+    fill: red;
+}
+.windowlogo{
+    fill: #ffffff;
+}
+.windowlogo:hover{
+    fill: var(--fourth);
+}
