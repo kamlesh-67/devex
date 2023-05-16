@@ -17,6 +17,35 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        #rubber:hover {
+            color: var(--seven);
+            animation: effect ease .5s 1; 
+        }
+
+        .heroLable span:hover {
+            color: var(--seven);
+        }
+
+
+        @keyframes rubberBand {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            25% {
+                transform: scale(1.3, 0.6);
+            }
+
+            50% {
+                transform: scale(1.1, 0.9);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    </style>
     <title>DEVEX - Kamlesh Prajapat</title>
 </head>
 
@@ -26,7 +55,7 @@
 
             <header>
 
-                <div class="logo">
+                <div class="logo" id="rubber">
                     <img src="gallery/l7.png" alt="DEVEX">
                 </div>
 
@@ -38,6 +67,19 @@
 
             </header>
             <div class="hero">
+                <div class="hero-shapes">
+                    <div class="shape-top-left">
+                        <img src="gallery/shape2.png" alt="">
+                    </div>
+                    <div class="shape-bottom-center">
+                        <img src="gallery/shape3.png" alt="">
+                        <div class="overlay" style="transform: rotate(238deg);"></div>
+                    </div>
+                    <div class="shape-bottom-right">
+                        <img src="gallery/shape8.png" alt="">
+                        <div class="overlay"></div>
+                    </div>
+                </div>
                 <svg class="animated" id="freepik_stories-javascript-frameworks" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                     xmlns:svgjs="http://svgjs.com/svgjs">
@@ -1237,37 +1279,27 @@
                 </svg>
 
                 <div class="heroLable">
-                    <h1>Front-End Software Developer</h1>
+                    <h1>
+                        <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>-</span><span>E</span><span>n</span><span>d</span> <span>S</span><span>o</span><span>f</span><span>t</span><span>w</span><span>a</span><span>r</span><span>e</span> <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
+                    </h1>
                     <p>Designing user-friendly interfaces, creating captivating visuals and content, optimizing for
                         accessibility and search engines, analyzing user behavior, and integrating third-party tools for
                         better engagement.</p>
                     <a href="#about">about me <i class="fa-solid fa-angle-right"></i></a>
                 </div>
-                <svg class="heroback" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440"
-                    height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
-                    <g mask="url(&quot;#SvgjsMask1043&quot;)" fill="none">
-                        <path
-                            d="M70.14 -53.87L135.09 -16.37L135.09 58.63L70.14 96.13L5.19 58.63L5.19 -16.37zM459.86 396.13L524.82 433.63L524.82 508.63L459.86 546.13L394.91 508.63L394.91 433.63zM719.68 -53.87L784.63 -16.37L784.63 58.63L719.68 96.13L654.72 58.63L654.72 -16.37zM1044.45 58.63L1109.4 96.13L1109.4 171.13L1044.45 208.63L979.49 171.13L979.49 96.13zM979.49 171.13L1044.45 208.63L1044.45 283.63L979.49 321.13L914.54 283.63L914.54 208.63zM1174.35 283.63L1239.31 321.13L1239.31 396.13L1174.35 433.63L1109.4 396.13L1109.4 321.13zM1369.22 -53.87L1434.17 -16.37L1434.17 58.63L1369.22 96.13L1304.26 58.63L1304.26 -16.37zM1564.08 508.63L1629.03 546.13L1629.03 621.13L1564.08 658.63L1499.12 621.13L1499.12 546.13z"
-                            stroke="rgba(255, 255, 255, 1)" stroke-width="2"></path>
-                        <path
-                            d="M62.64 -53.87 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM127.59 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM127.59 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM62.64 96.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM-2.31 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM-2.31 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM452.36 396.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM517.32 433.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM517.32 508.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM452.36 546.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM387.41 508.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM387.41 433.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM712.18 -53.87 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM777.13 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM777.13 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM712.18 96.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM647.22 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM647.22 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1036.95 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1101.9 96.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1101.9 171.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1036.95 208.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM971.99 171.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM971.99 96.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1036.95 283.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM971.99 321.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM907.04 283.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM907.04 208.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1166.85 283.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1231.81 321.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1231.81 396.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1166.85 433.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1101.9 396.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1101.9 321.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1361.72 -53.87 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1426.67 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1426.67 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1361.72 96.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1296.76 58.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1296.76 -16.37 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1556.58 508.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1621.53 546.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1621.53 621.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1556.58 658.63 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1491.62 621.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0zM1491.62 546.13 a7.5 7.5 0 1 0 15 0 a7.5 7.5 0 1 0 -15 0z"
-                            fill="rgba(255, 255, 255, 1)"></path>
-                        <path
-                            d="M47.05 -5.33L98.15 24.17L98.15 83.17L47.05 112.67L-4.05 83.17L-4.05 24.17zM98.15 83.17L149.24 112.67L149.24 171.67L98.15 201.17L47.05 171.67L47.05 112.67zM47.05 171.67L98.15 201.17L98.15 260.17L47.05 289.67L-4.05 260.17L-4.05 201.17zM149.24 171.67L200.34 201.17L200.34 260.17L149.24 289.67L98.15 260.17L98.15 201.17zM251.44 348.67L302.53 378.17L302.53 437.17L251.44 466.67L200.34 437.17L200.34 378.17zM251.44 525.67L302.53 555.17L302.53 614.17L251.44 643.67L200.34 614.17L200.34 555.17zM353.63 348.67L404.73 378.17L404.73 437.17L353.63 466.67L302.53 437.17L302.53 378.17zM455.83 -5.33L506.92 24.17L506.92 83.17L455.83 112.67L404.73 83.17L404.73 24.17zM558.02 -5.33L609.12 24.17L609.12 83.17L558.02 112.67L506.92 83.17L506.92 24.17zM660.21 -5.33L711.31 24.17L711.31 83.17L660.21 112.67L609.12 83.17L609.12 24.17zM711.31 260.17L762.41 289.67L762.41 348.67L711.31 378.17L660.21 348.67L660.21 289.67zM660.21 348.67L711.31 378.17L711.31 437.17L660.21 466.67L609.12 437.17L609.12 378.17zM660.21 525.67L711.31 555.17L711.31 614.17L660.21 643.67L609.12 614.17L609.12 555.17zM762.41 -5.33L813.5 24.17L813.5 83.17L762.41 112.67L711.31 83.17L711.31 24.17zM813.5 83.17L864.6 112.67L864.6 171.67L813.5 201.17L762.41 171.67L762.41 112.67zM915.7 83.17L966.8 112.67L966.8 171.67L915.7 201.17L864.6 171.67L864.6 112.67zM966.8 348.67L1017.89 378.17L1017.89 437.17L966.8 466.67L915.7 437.17L915.7 378.17zM1068.99 348.67L1120.09 378.17L1120.09 437.17L1068.99 466.67L1017.89 437.17L1017.89 378.17zM1171.18 -5.33L1222.28 24.17L1222.28 83.17L1171.18 112.67L1120.09 83.17L1120.09 24.17zM1222.28 83.17L1273.38 112.67L1273.38 171.67L1222.28 201.17L1171.18 171.67L1171.18 112.67zM1222.28 260.17L1273.38 289.67L1273.38 348.67L1222.28 378.17L1171.18 348.67L1171.18 289.67zM1171.18 525.67L1222.28 555.17L1222.28 614.17L1171.18 643.67L1120.09 614.17L1120.09 555.17zM1375.57 348.67L1426.67 378.17L1426.67 437.17L1375.57 466.67L1324.47 437.17L1324.47 378.17zM1375.57 525.67L1426.67 555.17L1426.67 614.17L1375.57 643.67L1324.47 614.17L1324.47 555.17zM1477.76 -5.33L1528.86 24.17L1528.86 83.17L1477.76 112.67L1426.67 83.17L1426.67 24.17zM1528.86 83.17L1579.96 112.67L1579.96 171.67L1528.86 201.17L1477.76 171.67L1477.76 112.67zM1528.86 260.17L1579.96 289.67L1579.96 348.67L1528.86 378.17L1477.76 348.67L1477.76 289.67z"
-                            stroke="rgba(255, 255, 255, 1)" stroke-width="2"></path>
-                    </g>
-                    <defs>
-                        <mask id="SvgjsMask1043">
-                            <rect width="1440" height="560" fill="#ffffff"></rect>
-                        </mask>
-                    </defs>
-                </svg>
+                <img class="heroback" src="/gallery/side-dots.png" alt="">
+                <div class="hero-code-back">
+
+                </div>
+
             </div>
 
         </section>
         <section>
             <div class="about" id="about">
+                <div class="about-img">
+                    <img src="/gallery/about.png" alt="">
+                </div>
                 <div class="name">
                     <h2>Hi,I'm Kamlesh <br> programmer </h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
@@ -1281,6 +1313,33 @@
                         vitae ullam perspiciatis laboriosam quos! Quisquam pariatur est molestias nulla vero.</p>
                 </div>
 
+            </div>
+        </section>
+        <section>
+            <div class="skills">
+                <div class="p">Every mistake is a golden chance for you to unleash your full potential.</div>
+                <div class="skill-title">
+                    <h2>Skills & Experiece</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eos.</p>
+                    <p>HTML, CSS, JavaScript, crafting small and medium-sized web apps with React, custom plug-ins, features, animations, and designing interactive layouts using Tailwind. I also have full-stack developer expertise in Python and Java, as well as experience with one of the most widely used open-source CMS platforms - WordPress.</p>
+                    <p>visit my <a href="#">Linkedin</a> for more details</p>
+                    <div class="skill-brands">
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                        <div class="brand-logo"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

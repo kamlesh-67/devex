@@ -1,10 +1,11 @@
-:root{
-    --first:#00002c;
-    --second:#ebff0b;
-    --thired :#ff0070;
-    --fourth:#00fbec;
-    --fifth:#ffffff;
-    --sixth:#000000;
+:root {
+    --first: #00002c;
+    --second: #ebff0b;
+    --thired: #ff0070;
+    --fourth: #00fbec;
+    --fifth: #ffffff;
+    --sixth: #000000;
+    --seven:#3ed39d;
 }
 
 /* 
@@ -46,26 +47,30 @@ header nav a{
     font-family: sans-serif;
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: #00002c;
     font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;    
+    overflow-x: hidden;
     color: #ffffff;
     font-size: 18px;
 }
-p{
+
+p {
     line-height: 24px;
 
 }
+
 header {
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 0 7vw;
@@ -74,42 +79,49 @@ header {
     height: 12vh;
 }
 
-header .logo img{
-height: 3vh;
+header .logo img {
+    height: 3vh;
 }
-header nav li{
+
+header nav li {
     list-style: none;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: #ffffff;
     font-family: sans-serif;
     text-transform: capitalize;
     border: 2px solid white;
-    padding: 10px 26px ;
+    padding: 10px 26px;
     border-radius: 7px;
 }
 
-.hero{
+.hero {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: #ffffff;
 }
-.hero svg{
+
+.hero svg {
     height: 80vh;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 60px;
 }
-.hero p{
+
+.hero p {
     font-size: 18px;
     line-height: 24px;
     max-width: 500px;
 }
-.hero a{
-    color: #3ed39d;
+
+.hero a {
+    color: var(--seven);
     font-size: 18px;
     text-transform: capitalize;
     display: flex;
@@ -118,65 +130,164 @@ header nav a{
     margin-top: 14px;
     width: fit-content;
 }
-.hero a i{
+
+.hero a i {
     margin-left: 5px;
-    transition: transform .3s ease-out ;
-    transform:rotate(0deg);
+    transition: transform .3s ease-out;
+    transform: rotate(0deg);
 
 }
-.hero a:hover i{
-    transform:rotate(90deg);
+
+.hero a:hover i {
+    transform: rotate(90deg);
 }
-.heroback{
+
+.heroback {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    left: -30%;
+    transform: rotate(90deg);
+    width: 20vw;
     z-index: -12;
-    opacity: .2;
 }
 
-.about{
+.hero-shapes .shape-top-left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--first);
+    opacity: 0.4;
+}
+
+.hero-shapes .shape-top-left {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    z-index: -1;
+}
+
+.hero-shapes .shape-top-left img {
+    width: 300px;
+}
+
+.hero-shapes .shape-bottom-center {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    z-index: -1;
+}
+
+.hero-shapes .shape-bottom-center img {
+    width: 150px;
+    transform: rotate(238deg);
+
+}
+
+
+.hero-shapes .shape-bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    z-index: -1;
+}
+.hero-shapes .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--first);
+    opacity: 0.4;
+    top: 0;
+}
+
+.hero-shapes .shape-bottom-right img {
+    width: 150px;
+    transform: rotate(-238deg);
+}
+
+
+
+
+
+.about {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.about h2{
+
+.about h2 {
     font-size: 60px;
     line-height: 54px;
 }
-.about .name p{
+
+.about .name p {
     font-size: 20px;
     max-width: 500px;
     line-height: 54px;
 
 }
-.about .intro{
+
+.about .intro {
     max-width: 700px;
 }
-.about .intro p{
+
+.about .intro p {
     font-size: 18px;
 }
-.about svg{
+
+.about svg {
     height: 100vh;
     width: 100vw;
     position: absolute;
     opacity: 0.3;
 }
-.svghover{
+
+.svghover {
     fill: rgb(55, 71, 79);
     /* fill: #ebff0b; */
 }
-.svghover:hover{
+
+.svghover:hover {
     /* fill: #0bff40; */
-    fill: var(--fourth);
+    /* fill: var(--fourth); */
+    fill: var(--seven);
 }
-#els4y94mu3c8f:hover,#elp09mfr6t2v:hover {
+
+#els4y94mu3c8f:hover,
+#elp09mfr6t2v:hover {
     fill: red;
 }
-.windowlogo{
+
+.windowlogo {
     fill: #ffffff;
 }
-.windowlogo:hover{
-    fill: var(--fourth);
+
+.windowlogo:hover {
+    /* fill: var(--fourth); */
+    fill: var(--seven);
+}
+
+
+.about .about-img {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    z-index: -500;
+}
+
+.about .about-img img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.about .about-img::before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--first);
+    opacity: .4;
 }
