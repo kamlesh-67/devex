@@ -432,7 +432,7 @@ header nav a {
     gap: 20px;
 }
 .contect .form{
-    height: 30vh;
+    height: 31vh;
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -473,7 +473,7 @@ header nav a {
     color: var(--seven);
 }
 .contect .form a{
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 7px;
 }
 .contect .form input::placeholder{
